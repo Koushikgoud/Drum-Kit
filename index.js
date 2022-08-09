@@ -16,8 +16,8 @@ function handleClick(){
 }
 //Detecting keyboard key presses
 function handleKeyPress(){
-  makeSound(event.key);
-  buttonAnimation(event.key);
+  makeSound(event.key.toLowerCase());
+  buttonAnimation(event.key.toLowerCase());
 }
 
 document.addEventListener("keydown", handleKeyPress);
@@ -27,7 +27,7 @@ document.addEventListener("keydown", handleKeyPress);
 function makeSound(key){
   switch (key) {
     case "w":
-      var crash = new Audio('sounds/images/crash.mp3');
+      var crash = new Audio('sounds/crash.mp3');
       crash.play();
       break;
 

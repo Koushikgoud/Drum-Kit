@@ -15,7 +15,7 @@ function handleClick(){
 
 }
 //Detecting keyboard key presses
-function handleKeyPress(){
+function handleKeyPress(event){
   makeSound(event.key.toLowerCase());
   buttonAnimation(event.key.toLowerCase());
 }
